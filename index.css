@@ -1,0 +1,32 @@
+.main2{
+    border: 15px solid rgb(7, 3, 199);
+    background-color: rgb(234, 79, 105);
+    width: 15vw;
+    height: 50vh;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding:2%;
+    display: flex;
+    margin: auto;
+}
+#title{
+    color: rgba(255, 30, 30, 0.94);
+    background-color: yellow;
+}
+#main1{
+   border: 2px solid black;
+   display: flex;
+   flex-wrap: wrap;
+}
+img{
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+#t1:checked ~.main2{
+    transform : None ;
+}
+#t2:checked ~.main2{
+    transform : rotate(10deg) ; 
+  }
+
