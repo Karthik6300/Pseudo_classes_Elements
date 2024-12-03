@@ -8,7 +8,7 @@
       <h1>Pseudo_classes_Elements-Effects</h1>
     </div>
     <style>
-      body{
+      body {
         margin: auto;
         justify-items: center;
       }
@@ -20,162 +20,151 @@
         border-top-left-radius: 20%;
         border-bottom-right-radius: 20%;
         padding: 2%;
-        display: flex;
+        margin-top: -60%;
+        margin-left: 45%;
         
+   
       }
       #title {
         color: rgba(255, 30, 30, 0.94);
-        
-       
-       
       }
-      #main1 { 
-        border: 2px solid black;
-        position: absolute;  
+      #main1 {
+        width: 50%;
+        border: 3px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        
       }
       img {
+        width: 100%;
+        height: 100%;
         border-top-left-radius: 20%;
         border-bottom-right-radius: 20%;
       }
-
       #t1:checked ~ .main2 {
         transform: None;
       }
       #t2:checked ~ .main2 {
         transform: rotate(10deg);
       }
-      #t3:checked ~ .main2{
-        transform:  rotate(45deg);
+      #t3:checked ~ .main2 {
+        transform: rotate(45deg);
       }
-      #t4:checked ~ .main2{
+      #t4:checked ~ .main2 {
         transform: rotate3d(1, 2, 1, 45deg);
       }
-      #t5:checked ~ .main2{
-        transform: rotate3d(0, 1, 0, 60deg);  
+      #t5:checked ~ .main2 {
+        transform: rotate3d(0, 1, 0, 60deg);
       }
-      #t6:checked ~ .main2{
-        transform:  rotateX(45deg);
+      #t6:checked ~ .main2 {
+        transform: rotateX(45deg);
       }
-      #t7:checked ~ .main2{
-        transform:  rotateX(100deg);
+      #t7:checked ~ .main2 {
+        transform: rotateX(100deg);
       }
-      #t8:checked ~ .main2{
-        transform:  rotateY(45deg);
+      #t8:checked ~ .main2 {
+        transform: rotateY(45deg);
       }
-      #t9:checked ~ .main2{
+      #t9:checked ~ .main2 {
         transform: rotateY(90deg);
       }
-      #t10:checked ~ .main2{
+      #t10:checked ~ .main2 {
         transform: rotateZ(45deg);
       }
-      #t11:checked ~ .main2{
+      #t11:checked ~ .main2 {
         transform: rotateZ(90deg);
       }
-      #t12:checked ~ .main2{
-        transform: skew(20deg,20deg);
+      #t12:checked ~ .main2 {
+        transform: skew(20deg, 20deg);
       }
-      #t13:checked ~ .main2{
-        transform: skew(30deg,30deg);
+      #t13:checked ~ .main2 {
+        transform: skew(30deg, 30deg);
       }
-      #t14:checked ~ .main2{
+      #t14:checked ~ .main2 {
         transform: skewX(30deg);
       }
-      #t15:checked ~ .main2{
+      #t15:checked ~ .main2 {
         transform: skewX(40deg);
       }
-      #t16:checked ~ .main2{
+      #t16:checked ~ .main2 {
         transform: skewY(30deg);
       }
-      #t17:checked ~ .main2{
+      #t17:checked ~ .main2 {
         transform: skewY(40deg);
       }
-      #t18:checked ~ .main2{
-        transform: translate(20px,10px);
+      #t18:checked ~ .main2 {
+        transform: translate(20px, 10px);
       }
-      #t19:checked ~ .main2{
-        transform: translate(20px,20px);
+      #t19:checked ~ .main2 {
+        transform: translate(20px, 20px);
       }
-      #t20:checked ~ .main2{
-        transform: scale(2,2);
+      #t20:checked ~ .main2 {
+        transform: scale(2, 2);
       }
-      #t21:checked ~ .main2{
-        transform: scale(2.5,3);
+      #t21:checked ~ .main2 {
+        transform: scale(2.5, 3);
       }
-      #t22:checked ~ .main2{
+      #t22:checked ~ .main2 {
         transform: scaleX(1.5);
       }
-      #t23:checked ~ .main2{
+      #t23:checked ~ .main2 {
         transform: scaleX(50%);
       }
-      #t24:checked ~ .main2{
+      #t24:checked ~ .main2 {
         transform: scaleY(1.5);
       }
-      #t25:checked ~ .main2{
+      #t25:checked ~ .main2 {
         transform: scaleY(50%);
-
       }
+      /*@media screen and (min-width:320px)  and (max-width:725) {
+        #main1{
+          display: flex;
+          flex-direction: column;
+          
+        }
 
+        
+      }*/
+      
     </style>
   </head>
   <body>
-    <section>
-      <div id="main1">
-        <input type="radio" id="t1" name="transform" />transform : None ;<br>
-        <input type="radio" id="t2" name="transform" />transform : rotate(10deg);<br> 
-         <input type="radio" id="t3" name="transform" />Transform : rotate(45deg)
-        ; <br />
-        <input type="radio" id="t4" name="transform" />Transform :
-        rotate3d(1,2,1,45deg) ;<br />
-        <input type="radio" id="t5" name="transform" />Transform :
-        rotate3d(0,1,0,60deg) ;<br />
-        <input type="radio" id="t6" name="transform" />Transform :
-        rotateX(45deg) ;<br />
-        <input type="radio" id="t7" name="transform" />Transform :
-        rotateX(100deg) ; <br />
-        <input type="radio" id="t8" name="transform" />Transform :
-        rotateY(45deg) ; <br />
-        <input type="radio" id="t9" name="transform" />Transform :
-        rotateY(90deg) ; <br />
-        <input type="radio" id="t10" name="transform" />Transform :
-        rotateZ(45deg) ; <br />
-        <input type="radio" id="t11" name="transform" />Transform :
-        rotateZ(90deg) ; <br />
-        <input type="radio" id="t12" name="transform" />Transform :
-        skew(20deg,20deg); <br />
-        <input type="radio" id="t13" name="transform" />Transform :
-        skew(30deg,30deg) ; <br />
-        <input type="radio" id="t14" name="transform" />Transform : skewX(30deg)
-        ; <br />
-        <input type="radio" id="t15" name="transform" />Transform : skewX(40deg)
-        ; <br />
-        <input type="radio" id="t16" name="transform" />Transform : skewY(30deg)
-        ; <br />
-        <input type="radio" id="t17" name="transform" />Transform : skewY(40deg)
-        ; <br />
-        <input type="radio" id="t18" name="transform" />Transform :
-        translate(20px,10px) ; <br />
-        <input type="radio" id="t19" name="transform" />Transform :
-        translate(20px,20px) ; <br />
-        <input type="radio" id="t20" name="transform" />Transform : scale(2,2) ;
-        <br />
-        <input type="radio" id="t21" name="transform" />Transform : scale(2,5,3)
-        ; <br />
-        <input type="radio" id="t22" name="transform" />Transform : scaleX(1.5)
-        ; <br />
-        <input type="radio" id="t23" name="transform" />Transform : scaleX(50%)
-        ; <br />
-        <input type="radio" id="t24" name="transform" />Transform : scaleY(1.5)
-        ; <br />
-        <input type="radio" id="t25" name="transform" />Transform : scaleY(50%)
-        ; <br /> 
-        <div style="margin:auto" class="main2">
-          <img
-            src="https://images.unsplash.com/photo-1664783856972-ac9922d7b2d3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvcnR1bmVyfGVufDB8fDB8fHww"
-            width="100%"
-            alt=""
-          />
-        </div>
+    <div id="main1">
+      <div id="m3">
+      <input type="radio" id="t1" name="transform" />transform : None ; <br>
+      <input type="radio" id="t2" name="transform" />transform :rotate(10deg);<br />
+      <input type="radio" id="t3" name="transform" />Transform : rotate(45deg) ;<br />
+      <input type="radio" id="t4" name="transform" />Transform :rotate3d(1,2,1,45deg) ;<br />
+      <input type="radio" id="t5" name="transform" />Transform :rotate3d(0,1,0,60deg) ;<br />
+      <input type="radio" id="t6" name="transform" />Transform : rotateX(45deg);<br />
+      <input type="radio" id="t7" name="transform" />Transform : rotateX(100deg); <br />
+      <input type="radio" id="t8" name="transform" />Transform : rotateY(45deg) ; <br />
+      <input type="radio" id="t9" name="transform" />Transform : rotateY(90deg); <br />
+      <input type="radio" id="t10" name="transform" />Transform : rotateZ(45deg); <br />
+      <input type="radio" id="t11" name="transform" />Transform : rotateZ(90deg); <br />
+      <input type="radio" id="t12" name="transform" />Transform :skew(20deg,20deg); <br />
+      <input type="radio" id="t13" name="transform" />Transform :skew(30deg,30deg) ; <br />
+      <input type="radio" id="t14" name="transform" />Transform : skewX(30deg) ;<br />
+      <input type="radio" id="t15" name="transform" />Transform : skewX(40deg) ;<br />
+      <input type="radio" id="t16" name="transform" />Transform : skewY(30deg) ;<br />
+      <input type="radio" id="t17" name="transform" />Transform : skewY(40deg) ;<br />
+      <input type="radio" id="t18" name="transform" />Transform :translate(20px,10px) ; <br />
+      <input type="radio" id="t19" name="transform" />Transform :translate(20px,20px) ; <br />
+      <input type="radio" id="t20" name="transform" />Transform : scale(2,2) ;<br />
+      <input type="radio" id="t21" name="transform" />Transform : scale(2,5,3) ;<br />
+      <input type="radio" id="t22" name="transform" />Transform : scaleX(1.5) ;<br />
+      <input type="radio" id="t23" name="transform" />Transform : scaleX(50%) ;<br />
+      <input type="radio" id="t24" name="transform" />Transform : scaleY(1.5) ;<br />
+      <input type="radio" id="t25" name="transform" />Transform : scaleY(50%) ;<br />
+      <div class="main2">
+        <img
+          src="https://images.unsplash.com/photo-1664783856972-ac9922d7b2d3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvcnR1bmVyfGVufDB8fDB8fHww"
+          width="100%"
+          alt=""
+        />
       </div>
-    </section>
+    </div>
   </body>
 </html>
